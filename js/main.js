@@ -3,7 +3,6 @@ var euroButton = document.getElementById('generate-euro');
 
 if (lottoButton) {
     lottoButton.addEventListener('click', () => {
-
         generateLotto();
 
     })
@@ -11,9 +10,7 @@ if (lottoButton) {
 
 if (euroButton) {
     euroButton.addEventListener('click', () => {
-
         generateEuro();
-
     })
 }
 
@@ -33,9 +30,6 @@ function generateLotto() {
         document.getElementById('l' + i).innerText = numbers[i - 1];
     }
     document.getElementById('s1').innerText = sz;
-
-
-    uploadLotto(numbers, sz);
 }
 
 
@@ -70,15 +64,4 @@ function generateNumber(min, max, ignore) {
 
 function sort(array) {
     return array.sort(function(a, b) { return a - b; });
-}
-
-function uploadLotto(numbers, sz) {
-    $.ajax({
-            method: "POST",
-            url: "upload.php",
-            data: { type: "LOTTO", numbers: numbers, sz: sz }
-        })
-        .done(function(response) {
-            console.info("Upload complete");
-        });
 }
