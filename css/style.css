@@ -1,0 +1,123 @@
+* {
+    font-family: "Roboto";
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.center-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-flow: row;
+}
+
+@media only screen and (max-width: 1200px) {
+    .center-div {
+        display: flex;
+        flex-direction: column;
+    }
+    .box {
+        margin-top: 2rem;
+        margin-left: 0 !important;
+        transition: none;
+    }
+}
+
+.box {
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+    border: none;
+    transition: margin 0.2s ease-in-out;
+}
+
+@media only screen and (min-width: 1200px) {
+    .box:hover {
+        margin-top: -.4rem;
+        margin-bottom: .4rem;
+    }
+}
+
+.box img {
+    padding: 2rem;
+    width: 30rem;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.yellow {
+    background: #f0d71c radial-gradient(circle at center, #fef566 30%, #f0d71c 80%);
+}
+
+.gray {
+    background: #ddd linear-gradient( 180deg, #ddd, #f1f1f1 30%, #ddd);
+}
+
+.number-yellow {
+    background: #fbe54b radial-gradient(circle at top left, #fbe54b 0, #fcec78 30%, #fbe54b 60%, #c7ae08 100%);
+}
+
+.number-gray {
+    background: #fbe54b radial-gradient(circle at top left, #ebebeb 0, #ffffff 30%, #ffffff 60%, #c7c7c7 100%);
+    box-shadow: inset -2px -2px 6px rgb(0 0 0 / 20%), inset 0 0 12px rgb(0 0 0 / 10%);
+}
+
+.box-text {
+    padding: 4rem;
+}
+
+.text {
+    padding-top: 3rem;
+}
+
+.center {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.vertical-center {
+    vertical-align: middle;
+    align-items: center;
+}
+
+.number {
+    text-align: center;
+    line-height: 3rem;
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 20%);
+    font-size: 1.5rem;
+    margin: .3rem;
+}
+
+.numbers-div {
+    padding-top: 1rem;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+button {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    background-color: #D22421;
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.5rem;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    box-shadow: 0 0 16px rgb(0 0 0 / 10%), 0 2px 4px rgb(0 0 0 / 20%);
+}

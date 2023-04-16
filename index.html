@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lotto Generator - Überlasse dein Glück dem Zufall</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="center-div flex">
+
+        <div class="box">
+
+            <img class="yellow" src="https://www.lotto.de/assets/images/logo-lotto6aus49.svg">
+            <div class="box-text">
+                <div class="text center">
+                    <h2>Generiere dein Glück:</h2>
+                </div>
+                <div class="numbers-div">
+                    <div id="l1" class="number number-gray">1</div>
+                    <div id="l2" class="number number-gray">2</div>
+                    <div id="l3" class="number number-gray">3</div>
+                    <div id="l4" class="number number-gray">4</div>
+                    <div id="l5" class="number number-gray">5</div>
+                    <div id="l6" class="number number-gray">6</div>
+                </div>
+                <div class="text flex vertical-center">
+                    <p>Superzahl: </p>
+                    <div id="s1" class="number number-gray" style="margin-left: 2rem;">1</div>
+                </div>
+                <div class="center">
+                    <button id="generate-lotto">Generieren</button>
+                </div>
+            </div>
+        </div>
+        <!--EUROJACKPOT-->
+        <div class="box" style="margin-left: 3rem;">
+
+            <img class="gray" src="https://www.lotto.de/assets/images/logo-eurojackpot.svg">
+            <div class=" box-text ">
+                <div class="text center ">
+                    <h2>Generiere dein Glück:</h2>
+                </div>
+                <div class="numbers-div ">
+                    <div id="en1" class="number number-yellow">1</div>
+                    <div id="en2" class="number number-yellow">2</div>
+                    <div id="en3" class="number number-yellow">3</div>
+                    <div id="en4" class="number number-yellow">4</div>
+                    <div id="en5" class="number number-yellow">5</div>
+                </div>
+                <div class="text flex vertical-center">
+                    <p>Eurozahlen: </p>
+                    <div id="ez1" class="number number-yellow" style="margin-left: 2rem; ">1</div>
+                    <div id="ez2" class="number number-yellow">2</div>
+                </div>
+                <div class="center">
+                    <button id="generate-euro">Generieren</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+<script src="js/main.js"></script>
+<script src="https://code.jquery.com/jquery-latest.js"></script>
+
+</html>
